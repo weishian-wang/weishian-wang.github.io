@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+:root {
+  --text-color-purple: #6539B5;
+}
+
+html,
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#main {
+  width: 85%;
+  background-image: linear-gradient(47deg, #3E8EDE 0%, #49d2ae 100%);
+  border-radius: 10px;
+  margin: -15px auto 20px auto;
+}
+
+header {
+  font-family: 'Courgette', cursive, monospace;
+  font-size: 180%;
+}
+
+h1 {
+  padding-top: 15px;
+}
+
+#img-div {
+  width: 100%;
+  display: inline-block;
+  background-image: url('./img/image1.png');
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#image {
+  padding-top: 15px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+.awards {
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.inner {
+  background-image: linear-gradient(-90deg, #9F9F9F 0%, #B5B5B5 20%, #C0C0C0 100%);
+  display: inline-flex;
+  align-items: center;
+  width: 48%;
+  border-radius: 5px;
+  margin: 5px;
+  height: 70px;
+}
+
+.awards-item {
+  margin: 5px;
+  color: var(--text-color-purple);
+  text-align: left;
+  font-family: 'Shrikhand', cursive;
+}
+
+.inner:hover {
+  background-position: 356px 0;
+  transition: all 0.3s;
+}
+
+.inner::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: inherit;
+}
+
+a {
+  color: var(--text-color-purple);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+#tribute-info {
+  max-width: 730px;
+  display: inline-block;
+}
+
+.books-and-lectures {
+  display: grid;
+  grid-template-rows: repeat(11, auto);
+  grid-row-gap: 10px;
+}
+
+h2 {
+  font-size: 200%;
+  color: white;
+}
+
+.item {
+  color: #666;
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+  font-weight: 100;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px #999;
+  transition: all 0.2s;
+}
+
+.item:hover {
+  -ms-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+footer {
+  padding: 50px 0 30px 0;
+  font-size: 110%;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page-center">
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+    </header>
+    <div id="form-container">
+      <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+        <div class="labels">
+          <label id="name-label" for="name">Name <span>*</span></label>
+        </div>
+        <div>
+          <input id="name" class="inner-input inner-text" type="text" name="name" placeholder="Please enter your name" required>
+        </div>
+        <div class="labels">
+          <label id="email-label" for="email">Email <span>*</span></label>
+        </div>
+        <div>
+          <input id="email" class="inner-input inner-text" type="email" name="email" placeholder="Please enter your Email" required>
+        </div>
+        <div class="labels">
+          <label id="number-label" for="age">Age <span>*</span></label>
+        </div>
+        <div>
+          <input id="number" class="inner-input inner-text" type="number" name="age" min="1" max="125" placeholder="Please enter your age" required>
+        </div>
+        <div class="labels">
+          <label for="currentRole">Which option best describes your current role?</label>
+        </div>
+        <div>
+          <select id="dropdown" class="dropdown inner-text" name="currentRole">
+            <option disabled value>Select an option</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="recommend-container">
+          <div class="labels">
+            <label for="ratings">How likely is that you would recommend freeCodeCamp to a friend? <span>*</span></label>
+          </div>
+          <div class="radios">
+            <div>
+              <label>
+                <input type="radio" name="radio-btns" value="1"> Definitely
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="radio-btns" value="2"> Maybe
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="radio-btns" value="3"> Not sure</label>
+            </div>
+          </div>
+        </div>
+        <div class="labels">
+          <label for="most-like">What do you like most in FCC:</label>
+        </div>
+        <div>
+          <select id="most-like" class="dropdown inner-text" name="mostLike">
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="openSource">Open Source</option>
+          </select>
+        </div>
+        <div class="preferences-container">
+          <div class="labels">
+            <label for="preferences">Things that should be improved in the future
+              <br>(Check all that apply): </label>
+          </div>
+          <div class="checkbox">
+            <div>
+              <label>
+                <input name="prefer" value="1" type="checkbox"> Front-end Projects</label>
+            </div>
+            <div>
+              <label>
+                <input name="prefer" value="2" type="checkbox"> Back-end Projects</label>
+            </div>
+            <div>
+              <label>
+                <input name="prefer" value="3" type="checkbox"> Data Visualization</label>
+            </div>
+            <div>
+              <label>
+                <input name="prefer" value="4" type="checkbox"> Challenges</label>
+            </div>
+            <div>
+              <label>
+                <input name="prefer" value="5" type="checkbox"> Open Source Community</label>
+            </div>
+            <div>
+              <label>
+                <input name="prefer" value="6" type="checkbox"> Gitter help rooms</label>
+            </div>
+            <div>
+              <label>
+                <input name="prefer" value="7" type="checkbox"> Videos</label>
+            </div>
+            <div>
+              <label>
+                <input name="prefer" value="8" type="checkbox"> City Meetups</label>
+            </div>
+            <div>
+              <label>
+                <input name="prefer" value="9" type="checkbox"> Wiki</label>
+            </div>
+            <div>
+              <label>
+                <input name="prefer" value="10" type="checkbox"> Forum</label>
+            </div>
+            <div>
+              <label>
+                <input name="prefer" value="11" type="checkbox"> Additional Courses</label>
+            </div>
+          </div>
+        </div>
+        <div class="labels">
+          <label for="comments">Any Comments or Suggestions?</label>
+        </div>
+        <div>
+          <textarea id="comments" class="inner-text" name="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div>
+          <button id="submit" class="submit-btn inner-text" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="photo-credit">
+    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@heaven_angel?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Luis Ángel Cardoza Rojas"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Luis Ángel Cardoza Rojas</span></a>
+  </div>
+</body>
+
+</html>

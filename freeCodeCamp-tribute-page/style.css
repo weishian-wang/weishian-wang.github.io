@@ -71,7 +71,8 @@ h1 {
   margin: 5px;
   color: var(--text-color-purple);
   text-align: left;
-  font-family: 'Shrikhand', cursive;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .inner:hover {

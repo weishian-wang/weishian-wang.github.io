@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
+body {
+  font-family: 'Gloria Hallelujah', cursive;
+  background-image: url('./img/header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.page-center {
+  width: 50%;
+  background-color: LightGray;
+  opacity: 0.9;
+  animation: fallingDown 1.8s forwards 0s ease;
+}
+
+#survey-form {
+  width: 70%;
+}
+
+span {
+  color: #EB4604;
+}
+
+@keyframes fallingDown {
+  0% {
+    transform: translateY(-110%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

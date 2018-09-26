@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
-
 body {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: "Helvetica", "Verdana", "Arial", sans-serif;
   background-image: url('./img/header.jpg');
   background-size: cover;
   background-position: center;
@@ -9,10 +7,15 @@ body {
   background-attachment: fixed;
 }
 
+#title {
+  font-weight: bold;
+}
+
 .page-center {
   width: 50%;
   background-color: LightGray;
   opacity: 0.9;
+  border-radius: 15px;
   animation: fallingDown 1.8s forwards 0s ease;
 }
 

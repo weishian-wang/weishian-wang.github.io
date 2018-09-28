@@ -6,26 +6,31 @@
   --text-color-purple: #6539B5;
 }
 
-html,
-body {
+html, body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
 
 #main {
   width: 85%;
-  background-image: linear-gradient(47deg, #3E8EDE 0%, #49d2ae 100%);
+  background-image: linear-gradient(47deg, #3e8ede 0%, #c5c5e5 100%);
   border-radius: 10px;
   margin: -15px auto 20px auto;
 }
 
 header {
   font-family: 'Courgette', cursive, monospace;
-  font-size: 180%;
 }
 
-h1 {
+#title {
   padding-top: 15px;
+  font-size: 4rem;
+}
+
+#ranked {
+  margin-top: -1rem;
+  padding: 0 10px 0 10px;
+  font-size: 1.4rem;
 }
 
 #img-div {
@@ -40,16 +45,22 @@ h1 {
 }
 
 #image {
-  padding-top: 15px;
+  margin-top: 30px;
   max-width: 100%;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: auto;
+}
+
+h2 {
+  font-size: 240%;
+  color: white;
+  padding: 15px 0 15px 0;
 }
 
 .awards {
-  max-width: 740px;
+  max-width: 780px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -57,30 +68,34 @@ h1 {
   justify-content: space-between;
 }
 
-.inner {
-  background-image: linear-gradient(-90deg, #9F9F9F 0%, #B5B5B5 20%, #C0C0C0 100%);
+.awards-inner {
+  background-image: linear-gradient(-90deg, #A0A0A0 0%, #B5B5B5 20%, #C0C0C0 100%);
   display: inline-flex;
   align-items: center;
   width: 48%;
   border-radius: 5px;
   margin: 5px;
-  height: 70px;
+  padding: 8px 0 8px 0;
+}
+
+.icon {
+  padding-left: 2px;
 }
 
 .awards-item {
-  margin: 5px;
   color: var(--text-color-purple);
   text-align: left;
-  font-weight: 600;
-  font-size: 18px;
+  font-family: 'Shrikhand', cursive;
+  font-size: 120%;
+  padding-left: 5px;
 }
 
-.inner:hover {
-  background-position: 356px 0;
+.awards-inner:hover {
+  background-position: 374px 0;
   transition: all 0.3s;
 }
 
-.inner::after {
+.awards-inner::after {
   content: "";
   position: absolute;
   pointer-events: none;
@@ -95,35 +110,30 @@ a {
   color: var(--text-color-purple);
 }
 
-a:link,
-a:visited {
+a:link, a:visited {
   text-decoration: none;
 }
 
 #tribute-info {
-  max-width: 730px;
+  max-width: 770px;
   display: inline-block;
 }
 
 .books-and-lectures {
   display: grid;
   grid-template-rows: repeat(11, auto);
-  grid-row-gap: 10px;
-}
-
-h2 {
-  font-size: 200%;
-  color: white;
+  grid-row-gap: 2px;
 }
 
 .item {
-  color: #666;
+  color: #606060;
   background-color: white;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
+  margin: 5px;
   font-weight: 100;
   border-radius: 5px;
-  box-shadow: 3px 3px 4px #999;
+  box-shadow: 3px 3px 4px #909090;
   transition: all 0.2s;
 }
 
@@ -134,6 +144,25 @@ h2 {
 }
 
 footer {
-  padding: 50px 0 30px 0;
-  font-size: 110%;
+  padding: 50px 0 35px 0;
+  font-size: 120%;
+}
+
+@media(max-width: 1000px) {
+  #main {
+    width: 100%;
+  }
+  #img-caption {
+    font-size: 130%;
+  }
+  .awards-inner {
+    width: 100%;
+  }
+  .awards-item {
+    font-size: 150%;
+    padding-left: 10px;
+  }
+  .icon {
+    padding-left: 10px;
+  }
 }

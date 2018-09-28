@@ -1,13 +1,13 @@
-let ranked = document.getElementById('ranked').innerText;
+const rankedTitle = document.getElementById('ranked');
 
-document.getElementById('ranked').innerText = titleCase(ranked);
+rankedTitle.textContent = titleToUpperCase(rankedTitle.textContent);
 
-function titleCase(str) {
+function titleToUpperCase(str) {
   return str
     .toLowerCase()
-    .split(" ")
+    .split(' ')
     .map(word => {
       return word[0].toUpperCase() + word.substr(1);
     })
-    .join(" ");
+    .join(' ');
 }

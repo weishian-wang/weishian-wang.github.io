@@ -7,20 +7,16 @@ body {
   background-attachment: fixed;
 }
 
-#title {
-  font-weight: bold;
-}
-
 .page-center {
-  width: 50%;
+  width: 50vw;
   background-color: LightGray;
   opacity: 0.9;
-  border-radius: 15px;
+  border-radius: 10px;
   animation: fallingDown 1.8s forwards 0s ease;
 }
 
 #survey-form {
-  width: 70%;
+  width: 80%;
 }
 
 span {
@@ -33,5 +29,29 @@ span {
   }
   100% {
     transform: translateY(0%);
+  }
+}
+
+@media(max-width: 1400px) {
+  .page-center {
+    width: 68vw;
+  }
+}
+
+@media(max-width: 1100px) {
+  .page-center {
+    width: 87vw;
+  }
+  #survey-form {
+    width: 85%;
+  }
+}
+
+@media(max-width: 960px) {
+  .page-center {
+    width: 95vw;
+  }
+  #survey-form {
+    width: 90%;
   }
 }

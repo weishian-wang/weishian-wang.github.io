@@ -1,0 +1,295 @@
+/* Global Styling */
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+:root {
+  --light-orange: #f1c40f;
+  --dark-gray: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  background-color: #d4d4d4;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+/* Global Classes Styling */
+.nav-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: var(--dark-gray);
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: darkorange;
+}
+
+.btn {
+  background-color: var(--light-orange);
+  border: none;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-weight: bolder;
+  height: 35px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px #aaaaaa;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 10px 40px;
+  background-color: #d4d4d4;
+}
+
+.header-flex {
+  height: 47px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  padding-top: 10px;
+  width: 300px;
+}
+
+header nav li {
+  display: inline;
+  padding: 0 20px;
+}
+
+/* Showcase */
+#showcase {
+  min-height: 100vh;
+  background-image: url('./img/showcase.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+#showcase h1 {
+  padding-top: 48vh;
+  font-size: 55px;
+  color: azure;
+}
+
+/* Newsletter */
+.news-flex {
+  padding: 30px 10px;
+  background-color: var(--dark-gray);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#newsletter h2 {
+  margin-right: 200px;
+  color: var(--light-orange);
+}
+
+#newsletter form {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 35px;
+  width: 300px;
+  border: hidden;
+  outline: none;
+  background-color: lightgray;
+}
+
+#newsletter input[type="submit"] {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Features */
+.feature-flex {
+  margin: 50px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box {
+  width: 25%;
+}
+
+.icon {
+  color: darkorange;
+  margin-bottom: 10px;
+}
+
+/* How It Work */
+#how-it-works {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  padding: 50px;
+}
+
+/* Pricing */
+#pricing {
+  margin: 40px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#tenor, #bass, #valve {
+  border: goldenrod 1px solid;
+  margin: 0 20px;
+  width: calc(100vw / 4.5);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.level {
+  color: black;
+  background-color: #ddd;
+  border-radius: 5px;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#pricing h2 {
+  margin: 20px 0;
+}
+
+#pricing ol {
+  list-style-type: none;
+  padding-left: 10px;
+  font-size: 1.1em;
+}
+
+#pricing button {
+  margin: 18px 0;
+}
+
+/* Footer */
+footer {
+  /* background-color: #ddd; */
+  background-color: var(--dark-gray);
+  padding: 20px;
+}
+
+.footer-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer p {
+  margin-right: 60px;
+  color: azure;
+}
+
+footer ul {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style-type: none;
+}
+
+footer ul li {
+  padding: 0 10px;
+}
+
+footer .nav-link {
+  color: azure;
+}
+
+@media(max-width: 1100px) {
+  #newsletter h2 {
+    margin-right: 10px;
+  }
+  #pricing {
+    justify-content: space-around;
+  }
+  #tenor, #bass, #valve {
+    width: 30vw;
+    margin: 0 8px;
+  }
+}
+
+@media(max-width: 768px) {
+  .header-flex {
+    height: 150px;
+    flex-flow: column nowrap;
+  }
+  header nav li {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+  }
+  #showcase {
+    min-height: 100vh;
+  }
+  #showcase h1 {
+    padding-top: 48vh;
+  }
+  .news-flex {
+    padding: 30px 0;
+    flex-flow: column nowrap;
+  }
+  #newsletter h2 {
+    margin-right: 0;
+  }
+  #newsletter form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  #newsletter input[type="email"] {
+    width: 60vw;
+  }
+  #newsletter input[type="submit"] {
+    margin-top: 15px;
+  }
+  .feature-flex {
+    flex-flow: column nowrap;
+  }
+  .box {
+    width: 80%;
+    padding-bottom: 40px;
+  }
+  #pricing {
+    flex-flow: column nowrap;
+  }
+  #tenor, #bass, #valve {
+    width: 70%;
+    margin: 15px 0;
+  }
+  .footer-flex {
+    flex-flow: column-reverse nowrap;
+    align-items: center;
+  }
+  footer p {
+    margin: 10px 0 0 0;
+  }
+}

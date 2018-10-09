@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Random Quote Machine</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Load and initialize the Facebook SDK -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId            : '298657480962001',
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v3.1'
+      });
+    };
+  
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <div class="container-fluid">
+    <div id="quote-box">
+
+      <blockquote id="text">
+        <i class="fa fa-quote-left"></i>
+        <span id="quote"></span>
+        <i class="fa fa-quote-right"></i>
+        <footer id="author" class="text-right"></footer>
+      </blockquote>
+
+      <div class="row justify-content-between align-items-center">
+        <div class="col-4">
+          <a id="tweet-quote" class="btn btn-social-icon btn-twitter" href="https://twitter.com/intent/tweet?text=%22Don't%20judge%20each%20day%20by%20the%20harvest%20you%20reap%20but%20by%20the%20seeds%20that%20you%20plant.%22%20-Robert%20Stevenson&amp;hashtags=inspirationalquotes" target="_blank" title="Tweet this quote!">
+            <i class="fab fa-twitter-square fa-2x"></i>
+          </a>
+          <a id="facebook-share-quote" class="btn btn-social-icon btn-facebook" href="#" target="_blank" title="Post this quote on facebook!" >
+            <i class="fab fa-facebook-square fa-2x"></i>
+          </a>
+        </div>
+
+        <div class="col-5">
+          <button id="new-quote" class="btn btn-primary">Get New Quote</button>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="site-footer">Created by <a href="" target="_blank"><b>Wei-Shian Wang</b></a></footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

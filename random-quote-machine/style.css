@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911');
+
+body {
+  font-family: 'Goudy Bookletter 1911', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #c0c0c0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#quote-box {
+  background-color: lightgray;
+  margin: auto;
+  margin-top: 35vh;
+  max-width: 500px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #b3b3b3;
+  opacity: 0.93;
+}
+
+blockquote {
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+
+#author {
+  font-size: 20px;
+  color: black;
+}
+
+.site-footer {
+  color: aliceblue;
+  font-size: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+}
+
+footer.site-footer > a {
+  color: #2CC4F4;
+}

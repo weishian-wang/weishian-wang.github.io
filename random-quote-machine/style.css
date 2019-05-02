@@ -44,6 +44,6 @@ blockquote {
   padding: 10px;
 }
 
-footer.site-footer > a {
+.site-footer > a {
   color: #2CC4F4;
 }

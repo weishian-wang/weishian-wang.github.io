@@ -17,11 +17,9 @@ const body = document.querySelector('body');
 const shareToTweet = document.getElementById('tweet-quote');
 const shareToFacebook = document.getElementById('facebook-share-quote');
 
-let quotesData;
-
 getRandomBackground();
+let quotesData;
 getQuotesData(quotesDataURL);
-
 newQuoteButton.addEventListener('click', updateQuote);
 
 shareToFacebook.addEventListener('click', function() {
@@ -69,7 +67,9 @@ function getRandomImageID() {
 function getRandomBackground() {
   const srcURL = 'https://source.unsplash.com/';
   const imgID = getRandomImageID();
-  const imgSize = '/1920x1080';
+  const width = (window.screen.width) || 1366;
+  const height = (window.screen.height) || 768;
+  const imgSize = `/${width}x${height}`;
   const imgURL = srcURL + imgID + imgSize;
   body.style.backgroundImage = `url(${imgURL})`;
 }
